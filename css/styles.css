@@ -1,6 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  padding: 0 20px 80px 20px;
+}
+
+br {
+  display: none;
 }
 
 h1 {
@@ -13,36 +18,40 @@ p {
 }
 
 h3 {
-  margin-bottom: 8px;
+  margin-top: 15px;
 }
 
 #thinTop {
   font-weight: 200;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 0;
+  font-size: 1.45rem;
 }
 
 #thickTop {
   margin-top: 0;
   font-weight: 600;
+  font-size: 1.45rem;
 }
 
 .card {
   box-shadow: 0px 10px 15px hsl(229, 6%, 66%);
   border-radius: .25rem;
   text-align: left;
-  padding: 15px 30px 30px 30px;
+  margin: 30px 0 30px 0;
+  padding: 5px 30px 90px 30px;
   color: hsl(234, 12%, 34%);
 }
 
 .boxText {
-  font-size: 0.75rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .card-img {
-  float: right;
+  width: 60px;
+  height: 60px;
 }
+
 
 .greenBorder {
   border-top: solid;
@@ -62,9 +71,50 @@ h3 {
 .blueBorder {
   border-top: solid;
   border-color: hsl(212, 86%, 64%);
+
 }
 
-@media (min-width: 376px) {
+@media (min-width: 45em) {
+
+  body {
+    padding: 0 0 0 0;
+  }
+
+  br {
+    display: inline;
+  }
+
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  #thinTop {
+    font-weight: 200;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+
+  #thickTop {
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .card {
+
+    padding: 15px 30px 30px 30px;
+
+  }
+
+  .boxText {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+  }
+
+
+  .card-img {
+    float: right;
+  }
+
   .grid-container {
     margin-top: 70px;
     display: grid;
@@ -88,46 +138,5 @@ h3 {
   .card:nth-child(4) {
     grid-row: 2 / span 2;
     grid-column: 6 / span 2;
-  }
-}
-
-@media (max-width: 375px) {
-  body {
-    padding: 0 20px 80px 20px;
-  }
-
-  br {
-    display: none;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-
-  #thinTop {
-    font-weight: 200;
-    margin-top: 50px;
-    margin-bottom: 0;
-    font-size: 1.45rem;
-  }
-
-  #thickTop {
-    margin-top: 0;
-    font-weight: 600;
-    font-size: 1.45rem;
-  }
-
-  .card {
-    margin: 30px 0 30px 0;
-    padding: 5px 30px 90px 30px;
-  }
-
-  .boxText {
-    margin-bottom: 30px;
-  }
-
-  .card-img {
-    width: 60px;
-    height: 60px;
   }
 }
